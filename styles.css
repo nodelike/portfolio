@@ -48,8 +48,14 @@ li{
     margin-bottom: 20px;
 }
 
+.pfp-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .left-col{
-    padding: 20px 40px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,7 +63,6 @@ li{
 
 .right-col {
     display: flex;
-    width: 100%;
     padding: 10px 30px;
     border-left: 2px solid black;
     justify-content: space-around;
@@ -68,6 +73,7 @@ li{
     max-width: 350px;
     flex-direction: column;
     padding: 0 15px;
+    width: 100%;
 }
 
 .text-block span{
@@ -76,6 +82,68 @@ li{
     margin: 10px 0;
 }
 
+#age {
+    display: none;
+    transition: 2s ease-in-out;
+}
+
+#age-block:hover #age{
+    display: block;
+}
+
 .social-links{
     margin-left: 10px;
+}
+
+
+@media (max-width: 768px){
+    body, html {
+        flex-direction: column;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .left-col {
+        padding: 20px 10px;
+        /* width: 100%; */
+        
+        align-items: center;
+    }
+
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-left: 0px;
+        border-top: 2px solid black;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    .header-block{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .name-block h2 {
+        margin: 0;
+    }
+
+    .pfp {
+        width: 100px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .social-block{
+        margin-top: 20px;
+    }
+
 }

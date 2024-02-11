@@ -21,7 +21,7 @@ function getBirtdate(){
 
     let ageInSeconds = Math.floor(ageInMillis / 1000);
 
-    let age = `${ageInYears}y ${ageInMonths}m ${ageInDays}d ${ageInHours}:${ageInMinutes}:${ageInSeconds}s old`;
+    let age = `${ageInYears} Years, ${ageInMonths} months ${ageInDays} days ${ageInHours} hours ${ageInMinutes} minutes ${ageInSeconds} seconds old`;
 
     const ageDOM = document.getElementById("age")
     ageDOM.textContent = age;
