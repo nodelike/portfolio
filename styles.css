@@ -61,6 +61,7 @@ li{
     justify-content: space-between;
     max-width: 250px;
     position: fixed;
+    height: calc(100% - 30px);
 }
 
 .right-col {
