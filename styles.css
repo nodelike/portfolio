@@ -69,8 +69,7 @@ li{
     border-left: 2px solid black;
     justify-content: space-around;
     position: absolute;
-    right: 0;
-    max-width: 950px;
+    left: 350px;
 }
 
 .text-block {
