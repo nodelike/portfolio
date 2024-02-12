@@ -59,6 +59,8 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 250px;
+    position: fixed;
 }
 
 .right-col {
@@ -66,6 +68,9 @@ li{
     padding: 10px 30px;
     border-left: 2px solid black;
     justify-content: space-around;
+    position: absolute;
+    right: 0;
+    max-width: 950px;
 }
 
 .text-block {
@@ -106,7 +111,7 @@ li{
     .left-col {
         padding: 20px 10px;
         /* width: 100%; */
-        
+        position: static;
         align-items: center;
     }
 
@@ -118,6 +123,7 @@ li{
         border-top: 2px solid black;
         padding: 20px 10px;
         align-items: center;
+        position: static;
     }
 
     .header-block{
