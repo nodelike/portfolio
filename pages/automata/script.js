@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
         root.style.setProperty('--cells', gridSize);
         clearInterval(intervalId);
         intervalId = null;
+
+        const startButton = document.getElementById("start");
+        startButton.classList.remove("active");
+        startButton.textContent = "Start";
     }
 
     function handleControlClick(id) {
