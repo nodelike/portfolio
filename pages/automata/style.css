@@ -1,0 +1,123 @@
+/* style.css */
+* {
+    font-family: monospace;
+}
+:root {
+    --cells: 20;
+    --cell-size: calc(100vh / var(--cells));
+    --border-size: calc(1px / var(--cells));
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: #fff8ec;
+    
+}
+
+h1 {
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cells), var(--cell-size));
+    grid-template-rows: repeat(var(--cells), var(--cell-size));
+    border-right: 8px solid black;
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: var(--border-size) solid black;
+    box-sizing: border-box;
+}
+
+.alive {
+    background-color: black;
+}
+
+
+.controls {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.controlsBtn {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 25px;
+    background: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.1s ease-in;
+    color: black;
+}
+
+.sections {
+    width: 100%;
+}
+
+.sections h1{
+    margin-bottom: 45px;
+}
+
+.params {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.params span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span label {
+    font-size: 20px;
+}
+
+span input{
+    font-size: 20px;
+    width: 250px;
+    background: transparent;
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.active {
+    background: black;
+    color: #fff8ec;
+}
+
+
+

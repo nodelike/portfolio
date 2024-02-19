@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cellular Automaton</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="grid"></div>
+    <div class="controls">
+        <h1 style="font-size: 65px;">GAME OF LIFE</h1>
+
+        <div class="sections">
+            <h1>PARAMETERS</h1>
+            <div class="params">
+                <span>
+                    <label id="sizeLabel" for="grid-size" style="margin-right: 20px;">Grid Size: </label>
+                    <input type="number" id="grid-size" min="1" max="100" value="20">
+                </span>
+
+                <span style="display: flex; align-items: center;">
+                    <label id="speed" for="speed-control" style="margin-right: 20px;">Speed: 60%</label>
+                    <input type="range" id="speed-control" min="1" max="500" value="300">
+                </span>
+                
+            </div>
+        </div>
+        
+        <div class="sections">
+            <h1>CONTROLS</h1>
+            <div class="controlsBtn">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="randomize">Randomize</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
