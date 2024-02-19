@@ -36,6 +36,11 @@ h1 {
     height: var(--cell-size);
     border: var(--border-size) solid black;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: black;
 }
 
 .alive {
@@ -44,13 +49,23 @@ h1 {
 
 
 .controls {
+    position: relative;
     width: 50%;
-    padding: 20px;
+    padding: 20px 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+#backBtn i{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    font-size: 45px;
+    color: black;
+}
+
 
 .controlsBtn {
     display: flex;
