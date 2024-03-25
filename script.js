@@ -29,8 +29,27 @@ function getBirtdate(){
     return 1;
 }
 
+function parseMarkdown(markdown) {
+    // Replace markdown syntax with HTML tags
+    let html = markdown
+      .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+      .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+      .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+      .replace(/^\> (.*$)/gm, '<blockquote>$1</blockquote>')
+      .replace(/\*\*(.*)\*\*/gm, '<strong>$1</strong>')
+      .replace(/\*(.*)\*/gm, '<em>$1</em>')
+      .replace(/!\[(.*?)\]\((.*?)\)/gm, "<img alt='$1' src='$2' />")
+      .replace(/\[(.*?)\]\((.*?)\)/gm, "<a href='$2'>$1</a>")
+      .replace(/\n/gm, '<br>');
+  
+    return html;
+  }
+
 document.addEventListener("DOMContentLoaded", function() {
     getBirtdate()
     setInterval(getBirtdate, 1000);
-
 });
+
+function openBlog(element, link) {
+    window.open(`pages/blogs/blog.html?file=${link}`, '_blank');
+}

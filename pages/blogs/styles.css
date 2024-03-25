@@ -1,0 +1,96 @@
+body, html {
+    font-family: monospace;
+    box-sizing: border-box;
+    background: #fff8ec;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 0.9vw;
+}
+
+header {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.header-body {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-name{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.blog-name:hover{
+
+    text-decoration: underline;
+}
+
+.about{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.about:hover{
+    text-decoration: underline;
+}
+
+
+.main {
+    margin: 40px auto;
+    max-width: 50%;
+}
+
+/* ------------- POSTS HTML ------------- */
+
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blog-title {
+    margin: 10px 0;
+    border-left: 8px solid black;
+    padding: 10px 0;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+.post:hover > .blog-title {
+    text-decoration: underline;
+}
+
+.blog-date {
+    font-size: 16px;
+}
+
+/* ------------- BLOG HTML ------------- */
+
+#blog-title{
+    margin: 0;
+    font-size: 2.5em;
+    padding: 0.5em 0 0 0;
+    border-bottom: none;
+}
+
+#blog-date{
+    margin-top: 0;
+    padding: 1em 0 2em 0;
+    font-size: 1em;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+}
+
