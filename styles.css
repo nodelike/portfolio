@@ -59,15 +59,15 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 250px;
+    max-width: 300px;
     position: fixed;
     height: calc(100% - 30px);
+    border-right: 2px solid black;
 }
 
 .right-col {
     display: flex;
     padding: 10px 30px;
-    border-left: 2px solid black;
     justify-content: space-around;
     position: absolute;
     left: 350px;
@@ -110,7 +110,8 @@ li{
 
     .left-col {
         padding: 20px 10px;
-        /* width: 100%; */
+        max-width: 100%;
+        width: 100%;
         position: static;
         align-items: center;
     }

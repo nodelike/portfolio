@@ -94,3 +94,35 @@ header {
     border-bottom: 1px solid black;
 }
 
+@media (max-width: 768px){
+
+    .header-body{
+        width: 90%;
+    }
+
+    .blog-name {
+        font-size: 16px;
+    }
+
+    .about{
+        font-size: 16px;
+    }
+
+    /* --------------- BLOG HTML --------------- */
+    .main {
+        margin: 30px auto;
+        max-width: 90%;
+    }
+
+    /* --------------- POSTS HTML --------------- */
+    .blog-title{
+        font-size: 16px;
+        padding-left: 15px;
+        border-left: 4px solid black;
+    }
+
+    .blog-date{
+        font-size: 15px;
+    }
+
+}
