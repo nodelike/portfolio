@@ -1,0 +1,8 @@
+{
+    "routes": [
+      {
+        "src": "/pages/blogs/posts/(.*)",
+        "dest": "/pages/blogs/posts/$1"
+      }
+    ]
+  }
