@@ -20,8 +20,14 @@ The most prevalent philosophy of life of modern age is existentialism. Existenti
 
 --- 
 
+I recently watched DUNE part two. When I was watching the movie, I was completely immeresed in the universe of DUNE. That movie gave me a new experience that opened my mind to new universes. I would like to have new experiences like that. I want to see what it would really like if were to face an alien civilization like in the 3 Body Problem series.
 
-I recently watched DUNE part two. When I was watching the movie, I was completely immeresed in the universe of DUNE. That movie gave me a new experience that opened my mind to new universes. I would like to have new experiences like that.
+In denial of death, I want power over nature.
+In search for truth, I want infinite experiences.
 
+I believe there is an civilization out there in the past, present or the future which will outlast time through VR and increases the render rate of the subjective experience.
+
+
+I think the ultimate game is to actualize the mind of the god. Or in Schopenhauer's terms, reinforce the Will of the nature. Even the god is dying. God wants to [outlast the universe](https://youtu.be/5UxUS6bPiT8).
 
 
