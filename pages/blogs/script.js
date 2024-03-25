@@ -32,48 +32,50 @@ function renderBlogPost() {
 }
 
 function loadPosts() {
-    const postsFolder = 'posts/';
     const postsDiv = document.querySelector('.posts');
-
+    const postsFolder = 'posts/';
+  
     fetch(postsFolder)
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const html = parser.parseFromString(data, 'text/html');
-            const links = Array.from(html.getElementsByTagName('a'));
-            const markdownFiles = links
-                .filter(link => link.href.endsWith('.md'))
-                .map(link => link.href);
-
-            Promise.all(markdownFiles.map(file => fetch(file).then(response => response.text())))
-                .then(markdownContents => {
-                    const posts = markdownContents.map((markdown, index) => {
-                        const renderer = new marked.Renderer();
-                        let title = '';
-                        let date = '';
-
-                        renderer.heading = function(text, level) {
-                            if (level === 1 && !title) {
-                                title = text;
-                            } else if (level === 2 && !date) {
-                                date = text;
-                            }
-                            return '';
-                        };
-
-                        marked(markdown, { renderer });
-                        const fileName = markdownFiles[index].split('/').pop();
-
-                        return {
-                            title: title,
-                            date: date,
-                            url: `posts/${fileName}`
-                        };
-                    });
-
-                    displayPosts(posts);
-                });
-        });
+      .then(response => response.text())
+      .then(data => {
+        const parser = new DOMParser();
+        const html = parser.parseFromString(data, 'text/html');
+        const links = Array.from(html.getElementsByTagName('a'));
+        const markdownFiles = links
+          .filter(link => link.href.endsWith('.md'))
+          .map(link => link.textContent);
+  
+        Promise.all(markdownFiles.map(file => fetch(`${postsFolder}${file}`).then(response => response.text())))
+          .then(markdownContents => {
+            const posts = markdownContents.map((markdown, index) => {
+              const renderer = new marked.Renderer();
+              let title = '';
+              let date = '';
+  
+              renderer.heading = function(text, level) {
+                if (level === 1 && !title) {
+                  title = text;
+                } else if (level === 2 && !date) {
+                  date = text;
+                }
+                return '';
+              };
+  
+              marked(markdown, { renderer });
+  
+              return {
+                title: title,
+                date: date,
+                url: `${postsFolder}${markdownFiles[index]}`
+              };
+            });
+  
+            displayPosts(posts);
+          });
+      })
+      .catch(error => {
+        console.error('Error fetching post list:', error);
+      });
 }
 
 function displayPosts(posts) {
