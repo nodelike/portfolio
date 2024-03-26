@@ -1,4 +1,5 @@
 /*dark*/
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 .markdown-body {
   color-scheme: dark;
@@ -126,7 +127,7 @@
   overflow: hidden;
   background: transparent;
   border-bottom: 1px solid #21262d;
-  height: .25em;
+  height: .1em;
   padding: 0;
   margin: 24px 0;
   background-color: #30363d;
@@ -313,10 +314,38 @@
 }
 
 .markdown-body blockquote {
+  margin-top: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
   margin: 0;
   padding: 0 1em;
   color: black;
   border-left: .25em solid #30363d;
+  border-right: .25em solid #30363d;
+}
+
+cite {
+  display: block;
+	text-align: left;
+}
+
+.markdown-body blockquote:before,
+.markdown-body blockquote:after {
+  font-family: 'Special Elite', cursive;
+	color: #292929;
+	font-size: 26px;
+}
+
+.markdown-body blockquote:before {
+	content: '“';
+	margin-right: 10px;
+}
+
+.markdown-body blockquote:after {
+	content: '”';
+	margin-left: 10px;
 }
 
 .markdown-body ul,
