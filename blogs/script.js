@@ -1,3 +1,18 @@
+function likeBlogPost() {
+    const blogPostId = 10001 // Implement this function to extract the blog post ID from the URL
+  
+    fetch('https://kishore.blog/api/like/${blogPostId}', { method: 'POST' })
+      .then(response => response.json())
+      .then(data => {
+        const likeCountElement = document.querySelector('.likes span');
+        likeCountElement.textContent = data.likeCount;
+      })
+      .catch(error => {
+        console.error('Error liking blog post:', error);
+      });
+  }
+  
+
 function renderBlogPost() {
     const blogPostElement = document.getElementById('blog-post');
     const urlParams = new URLSearchParams(window.location.search);
@@ -27,6 +42,12 @@ function renderBlogPost() {
                     }
                     return `<h${level}>${text}</h${level}>`;
                 };
+
+                renderer.link = function(href, title, text) {
+                    const target = '_blank';
+                    const titleAttr = title ? ` title="${title}"` : '';
+                    return `<a href="${href}"${titleAttr} target="${target}">${text}</a>`;
+                  };
 
                 const html = marked(markdown, { renderer });
                 blogPostElement.innerHTML = html;
@@ -106,3 +127,5 @@ document.addEventListener("DOMContentLoaded", function() {
     renderBlogPost();
     
 });
+
+document.getElementById('like').addEventListener('click', likeBlogPost);
