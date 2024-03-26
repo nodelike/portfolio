@@ -3,6 +3,7 @@ const { sql } = require('@vercel/postgres');
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 // API endpoint for handling likes
 app.post('/api/like/:blogPostId', async (req, res) => {
@@ -30,6 +31,10 @@ app.post('/api/like/:blogPostId', async (req, res) => {
     console.error('Error updating like count:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
