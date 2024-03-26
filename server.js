@@ -34,8 +34,20 @@ app.post('/api/like/:blogPostId', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+    try {
+      res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    } catch (error) {
+      console.error('Error serving index.html:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  });
+  
+  // Error handling middleware
+  app.use((err, req, res, next) => {
+    console.error('Unhandled error:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  });
+  
 
 // Start the server
 const port = process.env.PORT || 3000;
