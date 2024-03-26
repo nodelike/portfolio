@@ -14,6 +14,12 @@ function renderBlogPost() {
                 renderer.heading = function(text, level) {
                     if (level === 1 && firstH1) {
                         firstH1 = false;
+
+                        const ogTitleElement = document.querySelector('meta[property="og:title"]');
+                        if (ogTitleElement) {
+                            ogTitleElement.setAttribute('content', text);
+                        };
+                        document.title = text
                         return `<h1 id="blog-title">${text}</h1>`;
                     } else if (level === 2 && firstH2) {
                         firstH2 = false;
@@ -24,9 +30,6 @@ function renderBlogPost() {
 
                 const html = marked(markdown, { renderer });
                 blogPostElement.innerHTML = html;
-
-                let blogTitle = document.getElementById("blog-title");
-                document.title = blogTitle.textContent
             })
             .catch(error => {
                 console.error('Error fetching markdown file:', error);
