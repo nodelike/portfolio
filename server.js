@@ -1,5 +1,6 @@
 const express = require('express');
 const { sql } = require('@vercel/postgres');
+const path = require('path');
 
 const app = express();
 app.use(express.json());
