@@ -51,5 +51,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function openBlog(element, link) {
-    window.open(`pages/blogs/blog.html?file=${link}`, '_blank');
+    window.open(`blogs/blog.html?file=${link}`, '_blank');
 }
