@@ -24,6 +24,9 @@ function renderBlogPost() {
 
                 const html = marked(markdown, { renderer });
                 blogPostElement.innerHTML = html;
+
+                let blogTitle = document.getElementById("blog-title");
+                document.title = blogTitle.textContent
             })
             .catch(error => {
                 console.error('Error fetching markdown file:', error);
@@ -98,4 +101,5 @@ function openBlog(element, link) {
 
 document.addEventListener("DOMContentLoaded", function() {
     renderBlogPost();
+    
 });
