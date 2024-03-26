@@ -4,9 +4,7 @@
 ## 25 Mar 2024
 
 
-```bash
-# My greatest regret in life would be to not experience enough experiences. The good and the bad.
-```
+> *My greatest regret in life would be to not experience enough experiences. The good and the bad.*
 
 <a href="https://users.ece.cmu.edu/~gamvrosi/thelastq.html" target="_blank">The last question</a> keeps me up at night. If death is fundamental, why are we here?
 
