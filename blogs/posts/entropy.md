@@ -17,7 +17,9 @@ This document is heavily inspired from <a href="https://youtu.be/5UxUS6bPiT8" ta
 
 The most prevalent philosophy of modern age is existentialism. Existentialism is simply put: Life is fundamentally meaningless but as an individual human being, you create your own meaning in this universe. Even though I disagree that life is not fundamentally meaningless, I think there is a bigger game that is being played in this universe, but nonetheless, existentialism is the current best we got for modern age theological beliefs.
 
-Considering death as fundamental and an important priori in our understanding of the universe, it really comes down to the question how do you want to die? As an existentialist myself. I see meaning and purpose not as a destination but as a search.
+Considering death as fundamental and an important priori in our understanding of the universe, it really comes down to the question what is "your" meaning of life? What is "your" purpose in the universe?
+
+I have always loved art. Especially the art of storytelling. I have <a href="https://tvtime.com/r/30nXp" target="_blank">watched a lot</a> of TV Shows, Anime and Movies. One of the reasons I think storytelling captivates the human mind besides music is because of the nature of complexities invloved in wrtiting a captivating story that mirrors the real world. Whenever I'm engaged in a storytelling artform, I am completely immersed in those worlds with the characters and the plot. I have <a href="https://www.instagram.com/p/Bu1cFIBnQjF/" target="_blank">learned with them, fought with them, loved with them, cried with them, laughed with them, grieved with them.</a>
 
 --- 
 
