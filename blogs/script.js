@@ -152,7 +152,6 @@ function openBlog(element, link) {
 document.addEventListener("DOMContentLoaded", function() {
     renderBlogPost();
     getBlogPostLikes();
-    
+    document.getElementById('likes').addEventListener('click', likeBlogPost); 
 });
 
-document.getElementById('likes').addEventListener('click', likeBlogPost);
