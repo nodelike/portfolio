@@ -149,9 +149,16 @@ function openBlog(element, link) {
     window.location.href = `blog.html?file=${link}`;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    renderBlogPost();
-    getBlogPostLikes();
-    document.getElementById('likes').addEventListener('click', likeBlogPost); 
+document.addEventListener("DOMContentLoaded", function () {
+  renderBlogPost()
+    .then(() => {
+      getBlogPostLikes();
+      const likesElement = document.getElementById('likes');
+      if (likesElement) {
+        likesElement.addEventListener('click', likeBlogPost);
+      }
+    })
+    .catch(error => {
+      console.error('Error rendering blog post:', error);
+    });
 });
-
