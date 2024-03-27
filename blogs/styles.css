@@ -172,6 +172,10 @@ footer {
     color: #ff4851;
 }
 
+.likes .liked {
+    color: #ff4851;
+}
+
 @media (max-width: 768px){
     .likes{
         top: 145px

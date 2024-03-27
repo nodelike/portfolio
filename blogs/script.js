@@ -1,43 +1,43 @@
-function likeBlogPost() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const blogPostId = urlParams.get('file');
-  
-    fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`, { method: 'POST' })
-      .then(response => response.json())
-      .then(data => {
-        const likeCountElement = document.querySelector('.likes span');
-        likeCountElement.textContent = data.likes;
-      })
-      .catch(error => {
-        console.error('Error liking blog post:', error);
-      });
-}
-  
-  function getBlogPostLikes() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const blogPostId = urlParams.get('file');
-  
-    fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Network response was not ok');
-        }
-      })
-      .then(data => {
-        const likeCountElement = document.querySelector('.likes span');
-        likeCountElement.textContent = data.likes;
-      })
-      .catch(error => {
-        console.error('Error retrieving blog post likes:', error);
-        // Log the response text if parsing JSON fails
-        fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`)
-          .then(response => response.text())
-          .then(text => console.error('Response text:', text))
-          .catch(error => console.error('Error retrieving response text:', error));
-      });
+function updateLikeButton(liked) {
+  const likeButton = document.getElementById('like');
+  if (liked) {
+    likeButton.classList.add('liked');
+  } else {
+    likeButton.classList.remove('liked');
   }
+}
+
+function likeBlogPost() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const blogPostId = urlParams.get('file');
+
+  fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`, { method: 'POST' })
+    .then(response => response.json())
+    .then(data => {
+      const likeCountElement = document.querySelector('.likes span');
+      likeCountElement.textContent = data.likes;
+      updateLikeButton(data.liked);
+    })
+    .catch(error => {
+      console.error('Error liking blog post:', error);
+    });
+}
+
+function getBlogPostLikes() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const blogPostId = urlParams.get('file');
+
+  fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`)
+    .then(response => response.json())
+    .then(data => {
+      const likeCountElement = document.querySelector('.likes span');
+      likeCountElement.textContent = data.likes;
+      updateLikeButton(data.liked);
+    })
+    .catch(error => {
+      console.error('Error retrieving blog post likes:', error);
+    });
+}
 
 function renderBlogPost() {
     const blogPostElement = document.getElementById('blog-post');
