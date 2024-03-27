@@ -1,14 +1,14 @@
 
 # Knocking at the gates of afterlife
 
-## 25 Mar 2024
+## Mar 24, 2024
 
 <img style="margin: 20px 0; width: 100%;" src="assets/images/entropy.gif"></img>
 
-[The last question](https://users.ece.cmu.edu/~gamvrosi/thelastq.html) keeps me up at night. If death is fundamental, why are we here?
+[The last question](https://users.ece.cmu.edu/~gamvrosi/thelastq.html) keeps me up at night. If death and disorder is fundamental, why are we here?
 
 Life seems to exist because universe seems to be maximising entropy through free energy dissipation.
-Assembly theory also seems suggest that universe is incresing the global net information density and entropy by increasing the local complexities through evolution and selection of the [objects](https://en.wikipedia.org/wiki/Mathematical_object) in the universe. Ironcially the very thing that enables life to exist is also the killer of the life. Entropy. In order to perform useful work, or to create order, you're always creating more disorder somewhere else. There will a come a point in the universe when there is no more useful energy to do work and the universe reaches thermodynamic equilibrium. [The end of times](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
+Assembly theory also seems suggest that universe is incresing the global net information density and entropy by increasing the local complexities through evolution and selection of the [objects](https://en.wikipedia.org/wiki/Mathematical_object) in the universe. Ironcially the very thing that enables life to exist is also the killer of the life. Entropy. In order to perform useful work, or to create order, you're always creating more disorder somewhere else. There will come a point in the universe when there is no more useful energy to do work and the universe reaches thermodynamic equilibrium. [The end of times](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
 
 This document is heavily inspired from [Outlasting the universe](https://youtu.be/5UxUS6bPiT8") by David Klipping. In this document we discuss how living in [metaverse](https://en.wikipedia.org/wiki/Virtual_world) might really be the only way to outlast the heat death of the universe and live a meaningfull life.
 
@@ -40,6 +40,10 @@ I want to see what it would really like if were to face an alien civilization li
 
 ## Metaverse Hell
 
+## Grand Finale
+
+> *LIFE is the constant battle against DEATH for SURVIVAL.*
+
 ```
 In denial of death, I want power over nature.
 
@@ -50,4 +54,4 @@ I believe there is an civilization out there in the past, present or the future 
 
 I think the ultimate game is to actualize the mind of the god. Or in Schopenhauer's terms, reinforce the Will of the nature. Even the god is dying. God wants to [outlast the universe](https://youtu.be/5UxUS6bPiT8). The ultimate endgame of intelligence in our universe may be to create as much meaning as possible before the end.
 
-The metaverse may be our species' best shot at an afterlife - an infinite playground to explore the frontiers of experience, emotion, beauty and truth until the last star burns out. An endless dream to rage against the dying of the light.
+The ultimate endgame of intelligence in our universe may be to create as much meaning and experience as possible before the inevitable end. With metaverse and virtual worlds, we may be able to maximize the depth and breadth of experiences available to consciousness before the lights go out for good. It's a race against time and entropy to squeeze out every last drop of beauty, awe, love, discovery, and meaning.

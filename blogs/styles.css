@@ -181,10 +181,6 @@ footer {
     color: #fff8ec;
 }
 
-.likes:hover > #like {
-    color: #ff4851;
-}
-
 #like.liked {
     color: #ff4851;
 }
