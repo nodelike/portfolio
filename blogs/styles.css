@@ -173,6 +173,9 @@ footer {
 }
 
 @media (max-width: 768px){
+    .likes{
+        top: 145px
+    }
 
     .header-body{
         width: 90%;

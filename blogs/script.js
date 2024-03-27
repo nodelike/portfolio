@@ -1,17 +1,43 @@
 function likeBlogPost() {
-    const blogPostId = 10001 // Implement this function to extract the blog post ID from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogPostId = urlParams.get('file');
   
-    fetch('https://kishore.blog/api/like/${blogPostId}', { method: 'POST' })
+    fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`, { method: 'POST' })
       .then(response => response.json())
       .then(data => {
         const likeCountElement = document.querySelector('.likes span');
-        likeCountElement.textContent = data.likeCount;
+        likeCountElement.textContent = data.likes;
       })
       .catch(error => {
         console.error('Error liking blog post:', error);
       });
-  }
+}
   
+  function getBlogPostLikes() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogPostId = urlParams.get('file');
+  
+    fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      })
+      .then(data => {
+        const likeCountElement = document.querySelector('.likes span');
+        likeCountElement.textContent = data.likes;
+      })
+      .catch(error => {
+        console.error('Error retrieving blog post likes:', error);
+        // Log the response text if parsing JSON fails
+        fetch(`/api/likes?blogPostId=${encodeURIComponent(blogPostId)}`)
+          .then(response => response.text())
+          .then(text => console.error('Response text:', text))
+          .catch(error => console.error('Error retrieving response text:', error));
+      });
+  }
 
 function renderBlogPost() {
     const blogPostElement = document.getElementById('blog-post');
@@ -125,6 +151,7 @@ function openBlog(element, link) {
 
 document.addEventListener("DOMContentLoaded", function() {
     renderBlogPost();
+    getBlogPostLikes();
     
 });
 
