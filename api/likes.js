@@ -7,39 +7,35 @@ module.exports = async (req, res) => {
   if (req.method === 'POST') {
     try {
       const cookies = cookie.parse(req.headers.cookie || '');
-      const userLikeKey = `${blogPostId}_${cookies.userId}`;
+      const likeKey = `liked_${blogPostId}`;
 
       // Check if the user has already liked the blog post
-      const userLiked = await kv.get(userLikeKey);
+      const userLiked = cookies[likeKey] === 'true';
 
       // Get the current like count from the key-value store
       let likeCount = parseInt(await kv.get(blogPostId)) || 0;
 
       if (userLiked) {
         // User has already liked the post, so unlike it
-        await kv.delete(userLikeKey);
         likeCount--;
       } else {
         // User hasn't liked the post, so like it
-        await kv.set(userLikeKey, 'liked');
         likeCount++;
       }
 
       // Update the like count in the key-value store
       await kv.set(blogPostId, likeCount);
 
-      // Set the user ID cookie if it doesn't exist
-      if (!cookies.userId) {
-        const userId = Date.now().toString();
-        res.setHeader('Set-Cookie', cookie.serialize('userId', userId, {
-          httpOnly: true,
-          maxAge: 60 * 60 * 24 * 365, // 1 year
-          sameSite: 'strict',
-          path: '/'
-        }));
-      }
+      // Set the like status cookie
+      const likeStatus = !userLiked;
+      res.setHeader('Set-Cookie', cookie.serialize(likeKey, likeStatus.toString(), {
+        httpOnly: true,
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        sameSite: 'strict',
+        path: '/'
+      }));
 
-      res.status(200).json({ likes: likeCount, liked: !userLiked });
+      res.status(200).json({ likes: likeCount, liked: likeStatus });
     } catch (error) {
       console.error('Error updating like count:', error);
       res.status(500).json({ error: 'Internal Server Error' });
@@ -47,15 +43,15 @@ module.exports = async (req, res) => {
   } else if (req.method === 'GET') {
     try {
       const cookies = cookie.parse(req.headers.cookie || '');
-      const userLikeKey = `${blogPostId}_${cookies.userId}`;
+      const likeKey = `liked_${blogPostId}`;
 
       // Get the current like count from the key-value store
       const likeCount = parseInt(await kv.get(blogPostId)) || 0;
 
       // Check if the user has already liked the blog post
-      const userLiked = await kv.get(userLikeKey);
+      const userLiked = cookies[likeKey] === 'true';
 
-      res.status(200).json({ likes: likeCount, liked: !!userLiked });
+      res.status(200).json({ likes: likeCount, liked: userLiked });
     } catch (error) {
       console.error('Error retrieving like count:', error);
       res.status(500).json({ error: 'Internal Server Error' });

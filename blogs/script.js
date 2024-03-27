@@ -64,7 +64,7 @@ function renderBlogPost() {
                         return `<h1 id="blog-title">${text}</h1>`;
                     } else if (level === 2 && firstH2) {
                         firstH2 = false;
-                        return `<h2 id="blog-date">${text}</h2>`;
+                        return `<div class="blog-header"><h2 id="blog-date">${text}</h2><div id="likes" class="likes"><i id="like" class="fa-solid fa-heart"></i><span style="font-size: 16px;">0</span></div></div>`;
                     }
                     return `<h${level}>${text}</h${level}>`;
                 };
@@ -155,4 +155,4 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
-document.getElementById('like').addEventListener('click', likeBlogPost);
+document.getElementById('likes').addEventListener('click', likeBlogPost);
