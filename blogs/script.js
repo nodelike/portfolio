@@ -119,7 +119,7 @@ function loadPosts() {
             return {
               title: title,
               date: date,
-              url: `posts/${fileName}`
+              url: `blog.html?file=posts/${fileName}`
             };
           });
 
@@ -135,7 +135,7 @@ function displayPosts(posts) {
   posts.forEach(post => {
     const postElement = document.createElement('div');
     postElement.classList.add('post');
-    postElement.setAttribute('onclick', `openBlog(this, '${post.url}')`);
+    postElement.setAttribute('onclick', `window.location.href = '${post.url}'`);
 
     const titleElement = document.createElement('a');
     titleElement.classList.add('blog-title');
@@ -151,20 +151,24 @@ function displayPosts(posts) {
   });
 }
 
-function openBlog(element, link) {
-  window.location.href = `blog.html?file=${link}`;
-}
+function init() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const markdownFile = urlParams.get('file');
 
-document.addEventListener("DOMContentLoaded", function () {
-  renderBlogPost()
-    .then(() => {
-      getBlogPostLikes();
-      const likesElement = document.getElementById('likes');
-      if (likesElement) {
-        likesElement.addEventListener('click', likeBlogPost);
-      }
-    })
-    .catch(error => {
-      console.error('Error rendering blog post:', error);
-    });
-});
+  if (markdownFile) {
+    document.querySelector('.posts').style.display = 'none';
+    renderBlogPost()
+      .then(() => {
+        getBlogPostLikes();
+        const likesElement = document.getElementById('likes');
+        if (likesElement) {
+          likesElement.addEventListener('click', likeBlogPost);
+        }
+      })
+      .catch(error => {
+        console.error('Error rendering blog post:', error);
+      });
+  } else {
+    loadPosts();
+  }
+}
