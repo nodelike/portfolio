@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.kishore.blog/</loc>
+  <lastmod>2024-04-02T12:33:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.kishore.blog/automata/automata.html</loc>
+  <lastmod>2024-04-02T12:33:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.kishore.blog/blogs/posts.html</loc>
+  <lastmod>2024-04-02T12:33:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.kishore.blog/blogs/blog.html?file=posts/gates-of-afterlife.md</loc>
+  <lastmod>2024-04-02T12:33:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.kishore.blog/index.html</loc>
+  <lastmod>2024-04-02T12:33:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
