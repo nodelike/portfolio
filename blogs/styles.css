@@ -66,7 +66,6 @@ header {
 
 footer {
     padding: 40px 0;
-    height: 100px;
     border-top: 1px solid black;
     margin-top: auto;
 }
@@ -96,6 +95,23 @@ footer {
     flex-direction: column;
     gap: 10px;
     /* justify-content: space-around; */
+}
+
+.buymeacoffee button{
+    padding: 10px 15px;
+    background: black;
+    color: #fff8ec;
+    border: 2px solid black;
+    font-size: 14px;
+    font-family: monospace;
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.buymeacoffee button:hover{
+    background: transparent;
+    color: black;
 }
 
 .main {
