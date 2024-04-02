@@ -1,14 +1,14 @@
 
-# Knocking at the gates of afterlife
+# Metaverse: The only afterlife that exists
 
 ## Mar 24, 2024
 
 <img style="margin: 20px 0; width: 100%;" src="assets/images/entropy.gif"></img>
 
-[The last question](https://users.ece.cmu.edu/~gamvrosi/thelastq.html) keeps me up at night. If death and disorder is fundamental, why are we here?
+[The Last Question](https://users.ece.cmu.edu/~gamvrosi/thelastq.html) keeps me up at night. If death and disorder is fundamental, why are we here?
 
 Life seems to exist because Universe seems to be maximising entropy through free energy dissipation.
-Assembly theory also seems suggest that Universe is incresing the global net information density and entropy by increasing the local complexities through evolution and selection of the [objects](https://en.wikipedia.org/wiki/Mathematical_object) in the Universe. Ironcially the very thing that enables life to exist is also the killer of it.   ***Entropy.*** In order to perform useful work, or to create order, you're always creating more disorder somewhere else. There will come a point in the Universe when there is no more useful energy to do work and the Universe reaches thermodynamic equilibrium. [The end of times](https://en.wikipedia.org/wiki/Heat_death_of_the_Universe).
+Assembly theory also seems suggest that Universe is incresing the global net information density and entropy by increasing the local complexities through evolution and selection of the [objects](https://en.wikipedia.org/wiki/Mathematical_object) in the Universe. Ironically the very thing that enables life to exist is also the killer of it.   ***Entropy.*** In order to perform useful work, or to create order, you're always creating more disorder somewhere else. There will come a point in the Universe when there is no more useful energy to do work and the Universe reaches thermodynamic equilibrium. [The End of times](https://en.wikipedia.org/wiki/Heat_death_of_the_Universe).
 
 This document is heavily inspired from [Outlasting the Universe](https://youtu.be/5UxUS6bPiT8) by David Klipping. In this document we discuss how living in [digital-Worlds/metaverse](https://en.wikipedia.org/wiki/Virtual_world) might really be the only way to outlast the heat death of the Universe and live a meaningfull life.
 
@@ -21,7 +21,7 @@ Even though I would personally disagree that life is not fundamentally meaningle
 Considering death as fundamental and an important priori in our understanding of our Universe, it really comes down to the question, what is "your" meaning of life? What is "your" purpose in the Universe? What is the purpose of civilization in this Universe?
 Who are you? What makes you "you"? Is it your consciousness? 
 
-[Ship of thesus](https://en.wikipedia.org/wiki/Ship_of_Theseus) is more than just the sum of its parts, because it also has informational grounding in this Universe. that persisted through experiences. Information lives on when physics dies, just like how your body is not your body every 7-10 years.
+[Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) is more than just the sum of its parts, because it also has informational grounding in this Universe. that persisted through experiences. Information lives on when physics dies, just like how your body is not your body every 7-10 years.
 
 >  **[Information has size in time. Not in space.](https://youtu.be/qoR8tV-5YR8)** <cite>*- Sarah Walker (MindFest, 2024)*</cite>
 
@@ -64,9 +64,9 @@ Virtual reality/Metaverse enables us with the sandbox for playing with the ideas
 
 > *LIFE is the constant battle against DEATH for SURVIVAL.*
 
-Let's say besides having such a small chance of survival, our civilaztion somehow manages to reach the end of times. We have passed all the [Great Filters](http://mason.gmu.edu/~rhanson/greatfilter.html) even at galactic scale. We have survived the [Andromeda–Milky Way collision](https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision). We survived The Great Wars of Heavens, as it was called, when we eventually collided with Laniakea Supercluster at the [Great Attractor](https://en.wikipedia.org/wiki/Great_Attractor) We had harnessed all the energy of all the stars in our local pocket in the Universe. Our minds had been digitized had been fused into one single mind colony to preserve our indentity and information over time. 
+Let's say besides having such a small chance of survival, our civilaztion somehow manages to reach the end of times. We have passed all the [Great Filters](http://mason.gmu.edu/~rhanson/greatfilter.html) even at galactic scale. We have survived the [Andromeda–Milky Way collision](https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision). We survived The Great War of Heavens, as it was called, when we eventually collided with Laniakea Supercluster at the [Great Attractor](https://en.wikipedia.org/wiki/Great_Attractor) We had harnessed all the energy of all the stars in our local pocket in the Universe. Our minds had been digitized had been fused into one single mind colony to preserve our identity and information over time. 
 
-To survive longer far, we increased our pereceived [render rate](https://youtu.be/KOwm7GUjcg8?t=3869) of the Universe in our simulated world. Computers now, leveraged [reversible computing](https://en.wikipedia.org/wiki/Reversible_computing#Reversibility) paradigm by reducing the entropic losses of energies and being able to run just by the energy released from hawking radiation of supermassive black-holes.
+To survive longer far, we increased our perceived [render rate](https://youtu.be/KOwm7GUjcg8?t=3869) of the Universe in our simulated world. Computers now, leveraged [reversible computing](https://en.wikipedia.org/wiki/Reversible_computing#Reversibility) paradigm by reducing the entropic losses of energies and being able to run just by the energy released from hawking radiation of supermassive black-holes.
 
 Knocking at the gates of afterlife, until the lights eventually went out.
 
