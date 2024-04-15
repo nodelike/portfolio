@@ -1,5 +1,5 @@
 
-# Create and run uncensored AI girlfriend locally
+# Create and run uncensored AI personas locally
 
 ## Apr 4, 2024
 
