@@ -1,5 +1,5 @@
 
-# Metaverse: The only afterlife that exists
+# Entropy is the mind killer
 
 ## Mar 24, 2024
 
