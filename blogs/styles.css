@@ -181,7 +181,7 @@ footer {
     padding-left: 30px;
     font-size: 18px;
     font-weight: bold;
-    color: #2f81f7;
+    color: var(--links-color);
 }
 
 .post:hover > .blog-title {
