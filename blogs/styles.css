@@ -1,7 +1,24 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #fff;
+    --border-color: #ff0048;
+    --links-color: #ff0048;
+}
+
+.light-mode {
+    --bg-color: #fff8ec;
+    --text-color: #000;
+    --border-color: black;
+}
+
+*{
+    color: var(--text-color);
+}
+
 body, html {
     font-family: monospace;
     box-sizing: border-box;
-    background: #fff8ec;
+    background: var(--bg-color);
     width: 100%;
     height: 100%;
     margin: 0;
@@ -10,9 +27,25 @@ body, html {
     flex-direction: column;
 }
 
+.markdown-body hr{
+    background-color: var(--border-color);
+}
+
+.markdown-body a{
+    color: var(--links-color);
+}
+
+.markdown-body blockquote::before, .markdown-body blockquote::after{
+    color: var(--text-color);
+}
+
+.markdown-body h2, .markdown-body blockquote{
+    border-color: var(--border-color);
+}
+
 ::selection {
-    background-color: #ffe100;
-    color: #000000;
+    background-color: var(--border-color);
+    color: white;
 }
 
 i {
@@ -22,13 +55,12 @@ i {
 
 .social-links {
     font-size: 16px;
-    color: #2f81f7;
-    
+    color: var(--links-color);
 }
 
 
 header {
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid var(--border-color);
     width: 100%;
     display: flex;
 }
@@ -42,8 +74,20 @@ header {
     justify-content: space-between;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar i{
+    color: var(--border-color);
+    cursor: pointer;
+}
+
 .blog-name{
-    color: black;
+    color: var(--border-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 28px;
@@ -55,7 +99,7 @@ header {
 }
 
 .about{
-    color: black;
+    color: var(--border-color);
     text-decoration: none;
     font-size: 18px;
 }
@@ -66,7 +110,7 @@ header {
 
 footer {
     padding: 40px 0;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--border-color);
     margin-top: auto;
 }
 
@@ -99,9 +143,9 @@ footer {
 
 .buymeacoffee button{
     padding: 10px 15px;
-    background: black;
-    color: #fff8ec;
-    border: 2px solid black;
+    background: var(--links-color);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
     font-size: 14px;
     font-family: monospace;
     /* font-weight: bold; */
@@ -111,7 +155,7 @@ footer {
 
 .buymeacoffee button:hover{
     background: transparent;
-    color: black;
+    color: var(--text-color);
 }
 
 .main {
@@ -132,7 +176,7 @@ footer {
 
 .blog-title {
     margin: 10px 0;
-    border-left: 8px solid black;
+    border-left: 8px solid var(--border-color);
     padding: 10px 0;
     padding-left: 30px;
     font-size: 18px;
@@ -154,7 +198,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid var(--border-color);
     padding-bottom: 1em;
 }
 
@@ -179,7 +223,7 @@ footer {
     /* position: absolute; */
     right: 0px;
     top: 100px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     cursor: pointer;
 }
 
@@ -189,16 +233,16 @@ footer {
 }
 
 #like {
-    background: black;
+    background: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     height: 30px;
     width: 30px;
     font-size: 16px;
     transition: 0.1s ease;
-    color: #fff8ec;
+    color: var(--bg-color);
 }
 
 #like.liked {
@@ -250,7 +294,7 @@ footer {
     .blog-title{
         font-size: 16px;
         padding-left: 15px;
-        border-left: 4px solid black;
+        border-left: 4px solid var(--border-color);
     }
 
     .blog-date{

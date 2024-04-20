@@ -172,3 +172,19 @@ function init() {
     loadPosts();
   }
 }
+
+document.getElementById("toggle-theme").addEventListener('click', () => {
+  const root = document.documentElement;
+  const isDarkMode = root.style.getPropertyValue('--bg-color') === '#000000';
+  if (isDarkMode) {
+    root.style.setProperty('--bg-color', '#fff8ec');
+    root.style.setProperty('--text-color', '#000');
+    root.style.setProperty('--border-color', '#000');
+    root.style.setProperty('--links-color', '#2f81f7');
+  } else {
+    root.style.setProperty('--bg-color', '#000000');
+    root.style.setProperty('--text-color', '#fff');
+    root.style.setProperty('--border-color', '#ff0048');
+    root.style.setProperty('--links-color', '#ff0048');
+  }
+});
