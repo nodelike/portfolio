@@ -223,7 +223,7 @@ footer {
     /* position: absolute; */
     right: 0px;
     top: 100px;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--text-color);
     cursor: pointer;
 }
 
@@ -237,7 +237,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--border-color);
     height: 30px;
     width: 30px;
     font-size: 16px;
@@ -246,7 +245,7 @@ footer {
 }
 
 #like.liked {
-    color: #ff4851;
+    color: #ff0048;
 }
 
 @media (max-width: 768px){
