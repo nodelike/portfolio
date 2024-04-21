@@ -43,6 +43,14 @@ body, html {
     border-color: var(--border-color);
 }
 
+.markdown-body pre {
+    background-color: #202020;
+}
+
+.markdown-body pre code{
+    color: #fff;
+}
+
 ::selection {
     background-color: var(--border-color);
     color: white;
