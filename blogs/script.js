@@ -200,5 +200,5 @@ document.getElementById("toggle-theme").addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const storedTheme = localStorage.getItem('theme');
-  setTheme(storedTheme || 'light');
+  setTheme(storedTheme || 'dark');
 });
