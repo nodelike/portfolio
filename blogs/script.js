@@ -60,7 +60,7 @@ function renderBlogPost() {
               const ogTitleElement = document.querySelector('meta[property="og:title"]');
               if (ogTitleElement) {
                 ogTitleElement.setAttribute('content', text);
-              };
+              }
               document.title = text
               return `<h1 id="blog-title">${text}</h1>`;
             } else if (level === 2 && firstH2) {
@@ -130,7 +130,9 @@ function loadPosts() {
 
 function displayPosts(posts) {
   const postsDiv = document.querySelector('.posts');
-  postsDiv.innerHTML = '';
+  const blogPostElement = document.getElementById('blog-post');
+
+  blogPostElement.innerHTML = '';
 
   posts.forEach(post => {
     const postElement = document.createElement('div');
