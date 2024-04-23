@@ -180,6 +180,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    gap: 20px;
 }
 
 .blog-title {
@@ -190,6 +191,7 @@ footer {
     font-size: 18px;
     font-weight: bold;
     color: var(--text-color);
+    width: 70%;
 }
 
 .post:hover > .blog-title {
@@ -199,6 +201,9 @@ footer {
 .blog-date {
     color: var(--links-color);
     font-size: 16px;
+    width: calc(30% - 43px);
+    display: flex;
+    justify-content: right;
 }
 
 /* ------------- BLOG HTML ------------- */

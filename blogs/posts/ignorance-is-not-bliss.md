@@ -1,6 +1,6 @@
 # Ignorance is not bliss
 
-## Apr 4, 2024
+## Apr 24, 2024
 
 <img style="margin: 20px 0; width: 100%;" src="assets/images/revolving-crystal.gif"></img>
 
